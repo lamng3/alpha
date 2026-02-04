@@ -1,0 +1,39 @@
+# ============================
+# Preliminary
+# ============================
+# any file without extension 
+* 
+!*/ 
+!*.*
+
+# ============================
+# C++
+# ============================
+# Compiled object files & binaries
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.out
+*.exe
+*.bin
+main
+
+# ============================
+# Editors / Tools
+# ============================
+# VSCode
+.vscode/
+
+# Competitive Programming Helper (CPH Judge extension)
+.cph/
+
+# Libraries / auto-generated
+lib/
+
+# ============================
+# Misc
+# ============================
+.DS_Store
