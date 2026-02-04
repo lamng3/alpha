@@ -1,4 +1,4 @@
-// problem url: 
+// problem url: https://cses.fi/problemset/task/1661
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -18,7 +18,22 @@ using vii = vector< vector<int> >;
 const int mod = 1e9+7;
 
 void solve() {
+    int n, x; cin >> n >> x;
     
+    vi a(n);
+    for (int i = 0; i < n; i++) cin >> a[i];
+
+    map<ll,int> f;
+    f[0] = 1;
+
+    ll ans = 0, run = 0;
+    for (int i = 0; i < n; i++) {
+        run += a[i];
+        if (f.count(run - x)) ans += f[run-x];
+        f[run]++;
+    }
+
+    cout << ans << '\n';
 }
 
 int main() {

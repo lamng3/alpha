@@ -18,12 +18,28 @@ using vii = vector< vector<int> >;
 const int mod = 1e9+7;
 
 void solve() {
-    
+    int n; cin >> n;
+
+    vi cows(n);
+    for (int i = 0; i < n; i++) cin >> cows[i];
+ 
+    map<int,int> pos;
+    pos[0] = -1;
+
+    ll ans = 0, run = 0;
+
+    for (int i = 0; i < n; i++) {
+        run += cows[i];
+        if (pos.count(run % 7)) ans = max(ans, (ll)i - pos[run % 7]);
+        else pos[run % 7] = i;
+    }
+
+    cout << ans << '\n';
 }
 
 int main() {
-    // freopen("name.in", "r", stdin);
-    // freopen("name.out", "w", stdout);
+    freopen("div7.in", "r", stdin);
+    freopen("div7.out", "w", stdout);
     ios::sync_with_stdio(0);
     cin.tie(0);
     int tt = 1;
