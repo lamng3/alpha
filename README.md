@@ -22,7 +22,8 @@
 
 - [x] **[USACO 2016 Silver]** Subsequences Summing to Sevens  
 - [x] **[CSES]** Subarray Sums II  
-- [x] **[CSES]** Subarray Divisibility  
+- [x] **[CSES]** Subarray Divisibility
+- [x] **[Codeforces]** 1826 D. Running Miles  
 
 ---
 
