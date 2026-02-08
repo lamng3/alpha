@@ -26,7 +26,7 @@
 
 ---
 
-## Advanced Prefix Sums
+## More Prefix Sums
 <a name="advanced-prefix-sums"></a>
 
 ### Kadane’s Algorithm
